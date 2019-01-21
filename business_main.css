@@ -23,7 +23,6 @@ font-family: serif;
   flex-direction: column;
   color: white;
   height: 100vh;
-  background-image: url("business_banner.jpeg");
   background-size: cover;
   /* padding: 30px; */
   text-align: center;
@@ -33,12 +32,13 @@ font-family: serif;
 
 h1, p {
 
-  margin: 20px;
+  margin: 0px;
 }
 
 h2 {
 
-  margin-bottom: 1em;
+  margin: 0;
+  /* margin-bottom: 1em; */
 }
 
 h3 {
@@ -52,6 +52,10 @@ h3 {
   width: 10%;
   height: 0px;
   background-color: black;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -83,7 +87,7 @@ h3 {
 .button-white {
   background-color: white;
   /* border: none; */
-  color: rgb(240, 95, 64);
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -115,23 +119,36 @@ hr {
   top: 0;
   z-index: 99;
   overflow: hidden;
-  /* background-color: #33300; */
-  /* background-color: transparent; */
 }
 
-.navbar a {
+ul {
+  margin-top: 0px;
+}
+
+.navbar ul li:first-child {
   float: left;
+}
+
+.navbar ul li {
+  list-style:none;
+  margin:10px;
+  float: right;
+}
+.navbar a {
+  float: right;
   display: block;
   color: #f2f2f2;
+  /* color: #212529; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-weight: 500;
 }
 
 .navbar a:hover {
   background-color: #ddd00;
-  color: black;
+  color: rgb(240, 95, 64);
 }
 
 .nav-colored {
@@ -141,17 +158,23 @@ hr {
 }
 
 .nav-colored a {
-  color: black;
+  color: #343a40;
 }
 
 .nav-colored a:hover {
   background-color: #ddd00;
-  color: gray;
+  color: rgb(240, 95, 64);
 }
 
+.active {
+   color: red;
+ }
 
 
-.content {
+
+
+
+/* .content {
   padding: 16px;
 }
 
@@ -163,7 +186,7 @@ hr {
 
 .sticky + .content {
   padding-top: 60px;
-}
+} */
 
 .my-container {
   padding-left: 20%;
@@ -178,22 +201,29 @@ hr {
 }
 
 .my-row {
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   /* justify-content: space-between; */
 }
 
 .infograph {
   /* width: 15%; */
-  margin: 35px;
+  /* margin: 35px;
   max-width: 25%;
+  min-width: 195px;
+  min-height: 244px; */
+  margin: 35px;
+  width: 25%;
+  height: auto;
+  min-height: 244px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .contact-row {
@@ -211,6 +241,10 @@ hr {
 
 }
 
+#heading {
+    background-image: url("business_banner.jpeg");
+}
+
 #home {
   background-color: rgb(240, 95, 64);
 }
@@ -221,6 +255,13 @@ hr {
 }
 
 #contact {
-  background-image: url("business_overhead.jpeg");
+  /* background-image: url("business_overhead.jpeg"); */
+  background-color: #212529;
   background-size: cover;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
 }

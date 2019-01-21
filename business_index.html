@@ -4,7 +4,7 @@
   <title>Business Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
@@ -16,7 +16,7 @@
 
 </head>
 <body>
-<div class="header">
+<div class="header" id="heading">
   <div class="background">
     <h1>A SIMPLE LAYOUT</h1>
     <hr>
@@ -27,12 +27,15 @@
 
 
 <div class="navbar" id="navbar">
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#">YOUR BRAND</a></li>
+      <li><a href="#contact" id="nav-item-1" class="nav-item active">CONTACT</a></li>
+      <li><a href="#services" id="nav-item-2" class="nav-item">SERVICES</a></li>
+      <li><a href="#home" id="nav-item-3" class="nav-item">ABOUT</a></li>
+    </ul>
 </div>
 
-<div class="my-container" id="home">
+<div class="my-container section" id="home">
   <h2>Clean and concise</h2>
   <!-- <div class="spacer"></div> -->
   <hr noshade>
@@ -40,7 +43,7 @@
   <a href="#services" class="button-white">call to action!</a>
 </div>
 
-<div class="my-container" id="services">
+<div class="my-container section" id="services">
   <h2>Infographics!</h2>
   <div class="dash"></div>
   <div class="my-row">
@@ -67,27 +70,27 @@
   </div>
 </div>
 
-<div class="header" id="contact">
-  <div class="background">
-      <h2>Let's chat</h2>
-      <!-- <div class="spacer"></div> -->
-      <hr noshade>
-      <p>Start a conversation with easy to find contact widgets.</p>
-      <br>
-      <br>
-      <!-- <a href="#services" class="button-white">call to action!</a> -->
-      <div class="contact-row">
-        <div class="contact-icon">
-          <img src="white_phone.png" alt="">
-          <p>555-777-9999</p>
-        </div>
-        <div class="contact-icon">
-          <img src="white_pencil.png" alt="">
-          <p>test@yourbiz.com</p>
-        </div>
-      </div>
+<div class="header section" id="contact">
 
-  </div>
+    <h2>Let's chat</h2>
+    <!-- <div class="spacer"></div> -->
+    <hr noshade>
+    <p>Start a conversation with easy to find contact widgets.</p>
+    <br>
+    <br>
+    <!-- <a href="#services" class="button-white">call to action!</a> -->
+    <div class="contact-row">
+      <div class="contact-icon">
+        <img src="white_phone.png" alt="">
+        <p>555-777-9999</p>
+      </div>
+      <div class="contact-icon">
+        <img src="white_pencil.png" alt="">
+        <p>test@yourbiz.com</p>
+      </div>
+    </div>
+
+
 </div>
 
 
