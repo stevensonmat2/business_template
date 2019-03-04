@@ -11,6 +11,10 @@ $(window).scroll(function() {
     }
 });
 
+//// TODO: make mobiel friendly, make header responsive
+
+
+//https://stackoverflow.com/questions/43346235/how-to-change-nav-link-color-depending-on-page-position
 
 // $(document).ready(function(){
 //    $(".nav-item").click(function () {
